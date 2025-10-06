@@ -2,12 +2,46 @@
 
 A bold, neo-brutalist website exposing the systematic destruction of Japanese culinary artistry through the cream cheese conspiracy.
 
+<div align="center">
+  
+![Demo](./public/screenshots/image.gif)
+
+*Neo-brutalist design with bold typography, high contrast, and dramatic messaging*
+
+</div>
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+### Hero Section
+![Hero](./public/screenshots/32_1x_shots_so.png)
+
+### Evidence Comparison
+![Evidence](./public/screenshots/415_1x_shots_so.png)
+
+### Chef Testimony
+![Testimony](./public/screenshots/637_1x_shots_so.png)
+
+### Mobile Views
+<p>
+<img src="./public/screenshots/215_1x_shots_so.png" width="250" alt="Mobile Hero">
+<img src="./public/screenshots/251_1x_shots_so.png" width="250" alt="Mobile Evidence">
+<img src="./public/screenshots/403_1x_shots_so.png" width="250" alt="Mobile Testimony">
+</p>
+
+</div>
+
+---
+
 ## 🎨 Design Philosophy
 
 This project uses a **neo-brutalist design system** featuring:
 
-- **Bold Typography**: Inter font (400-900 weights) with heavy uppercase text
-- **High Contrast**: Stark black, white, and vibrant red color palette
+- **Bold Typography**: Inter font (400, 700, 900 weights) with heavy uppercase text
+- **High Contrast**: Stark black, white, and vibrant red color palette (21:1 contrast ratio)
 - **Thick Borders**: 2px, 4px, and 8px borders for visual emphasis
 - **Rotated Elements**: Dynamic, tilted cards for visual interest
 - **Box Shadows**: Hard, offset shadows for depth without blur
@@ -102,14 +136,30 @@ npm run dev
 
 ## 🎯 Features
 
-- **Responsive Design**: Fully responsive across all device sizes
-- **Smooth Scrolling**: Seamless navigation between sections
-- **Image Fallbacks**: Graceful handling of failed image loads
-- **Type Safety**: Full TypeScript coverage
-- **Performance**: Optimized with Next.js 15 and Turbopack
-- **Accessibility**: Semantic HTML and ARIA labels
-- **Comprehensive Testing**: 130+ tests with 96% code coverage
-- **Reusable Components**: Modular UI component library
+### User Experience
+- ✅ **Responsive Design**: Fully responsive across all device sizes
+- ✅ **Smooth Scrolling**: Seamless navigation between sections
+- ✅ **Image Fallbacks**: Graceful handling of failed image loads
+- ✅ **Lazy Loading**: Native lazy loading for images
+
+### Performance ⚡
+- ✅ **120 KB First Load JS**: Optimized bundle size
+- ✅ **Static Generation**: Pre-rendered for maximum speed
+- ✅ **Font Optimization**: Reduced weights + display: swap
+- ✅ **Modern Formats**: AVIF/WebP support
+
+### Accessibility ♿
+- ✅ **WCAG 2.1 AA Compliant**: Full accessibility support
+- ✅ **Keyboard Navigation**: Complete keyboard support
+- ✅ **Screen Reader**: Compatible with all screen readers
+- ✅ **Focus Indicators**: Visible focus states
+- ✅ **Skip Links**: Skip to main content
+
+### Code Quality
+- ✅ **Type Safety**: Full TypeScript coverage
+- ✅ **Comprehensive Testing**: 139 tests with 97% coverage
+- ✅ **ESLint**: Zero linting errors
+- ✅ **Reusable Components**: Modular UI component library
 
 ## 🧩 Component Architecture
 
@@ -136,13 +186,13 @@ This project maintains high test coverage with comprehensive unit and component 
 
 ### Test Statistics
 
-- **Test Suites**: 12
-- **Total Tests**: 130+
-- **Coverage**: 96.22%
-  - Statements: 96.22%
+- **Test Suites**: 13 passed
+- **Total Tests**: 139 passed
+- **Coverage**: 97.14%
+  - Statements: 97.14%
   - Branches: 89.28%
   - Functions: 100%
-  - Lines: 96.22%
+  - Lines: 97.14%
 
 ### Test Structure
 
@@ -184,13 +234,12 @@ The color palette is defined in `app/globals.css`:
 
 ### Typography
 
-The site uses the Inter font family with the following weights:
+The site uses the Inter font family with optimized weights:
 - 400 (Regular)
-- 500 (Medium)
-- 600 (Semibold)
 - 700 (Bold)
-- 800 (Extrabold)
 - 900 (Black)
+
+*Reduced from 6 to 3 weights for better performance (~60 KB savings)*
 
 ### Spacing
 
