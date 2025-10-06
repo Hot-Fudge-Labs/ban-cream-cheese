@@ -6,9 +6,9 @@ import { StatCard, RotatedCard, CTAButton } from '@/app/components/ui';
  */
 export function HeroSection() {
   return (
-    <section className="min-h-screen bg-black text-white relative overflow-hidden">
+    <section className="min-h-screen bg-black text-white relative overflow-hidden" aria-label="Hero">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div className="grid grid-cols-8 h-full">
           {Array.from({ length: 64 }).map((_, i) => (
             <div key={i} className="border border-white/20"></div>

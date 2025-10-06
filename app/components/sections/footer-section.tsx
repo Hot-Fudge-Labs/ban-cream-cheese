@@ -21,9 +21,17 @@ export function FooterSection() {
         <RotatedCard variant="light" borderColor="red" rotation="-rotate-1">
           <h3 className="text-2xl font-black uppercase mb-4">CONTACT</h3>
           <div className="space-y-2 uppercase tracking-wide">
-            <p>TRUTH@REALUSUSHI.COM</p>
-            <p>@NOCREAMCHEESE</p>
-            <p>#AUTHENTICITYMATTERS</p>
+            <p>
+              <a href="mailto:truth@realusushi.com" className="hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors">
+                TRUTH@REALUSUSHI.COM
+              </a>
+            </p>
+            <p>
+              <a href="https://twitter.com/nocreamcheese" className="hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors" target="_blank" rel="noopener noreferrer">
+                @NOCREAMCHEESE
+              </a>
+            </p>
+            <p aria-label="Hashtag authenticity matters">#AUTHENTICITYMATTERS</p>
           </div>
         </RotatedCard>
 

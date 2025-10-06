@@ -14,7 +14,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       
-      <main>
+      <main id="main-content" role="main">
         <HeroSection />
         
         <section id={SECTION_IDS.EVIDENCE}>

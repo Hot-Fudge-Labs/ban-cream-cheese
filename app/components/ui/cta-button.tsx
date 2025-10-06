@@ -32,8 +32,9 @@ export function CTAButton({
   return (
     <button
       className={cn(
-        'border-4 uppercase tracking-widest transform hover:scale-105 transition-transform duration-200 font-medium',
+        'border-4 uppercase tracking-widest transform hover:scale-105 transition-transform duration-200 font-medium focus:outline-none focus:ring-4 focus:ring-offset-4',
         variantStyles[variant],
+        variant === 'primary' ? 'focus:ring-white focus:ring-offset-red-500' : 'focus:ring-black focus:ring-offset-white',
         sizeStyles[size],
         className
       )}
