@@ -15,8 +15,24 @@ export const metadata: Metadata = {
   authors: [{ name: "The Sushi Truth Project" }],
   openGraph: {
     title: "Sushi Truth - Cream Cheese Killed Sushi",
-    description: "Exposing the systematic destruction of Japanese culinary artistry.",
+    description: "Exposing the systematic destruction of Japanese culinary artistry through the cream cheese conspiracy. 90% of 'sushi' rolls contain cream cheese.",
     type: "website",
+    siteName: "Sushi Truth",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1581781870027-04212e231e96?q=80&w=1200&h=630&fit=crop&crop=entropy",
+        width: 1200,
+        height: 630,
+        alt: "Traditional authentic sushi nigiri - the way sushi should be",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sushi Truth - Cream Cheese Killed Sushi",
+    description: "Exposing the systematic destruction of Japanese culinary artistry. 90% of 'sushi' rolls contain cream cheese.",
+    images: ["https://images.unsplash.com/photo-1581781870027-04212e231e96?q=80&w=1200&h=630&fit=crop&crop=entropy"],
   },
 };
 
