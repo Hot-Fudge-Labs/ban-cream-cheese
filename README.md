@@ -244,10 +244,6 @@ Follows Tailwind's default spacing scale (0.25rem increments).
 
 Private project - All rights reserved.
 
-## 🤝 Contributing
-
-This is a demonstration project. Feel free to fork and adapt for your own purposes.
-
 ## ⚠️ Disclaimer
 
 This website is a satirical art project meant to provoke thought about cultural authenticity and fusion cuisine. The opinions expressed are exaggerated for comedic and artistic effect.
