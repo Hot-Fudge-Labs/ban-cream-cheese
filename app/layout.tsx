@@ -5,8 +5,10 @@ import { OG_IMAGE_URL } from "./lib/constants";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "700", "900"], // Reduced from 6 to 3 weights
   variable: "--font-inter",
+  display: "swap", // Prevent FOIT (Flash of Invisible Text)
+  preload: true,
 });
 
 export const metadata: Metadata = {

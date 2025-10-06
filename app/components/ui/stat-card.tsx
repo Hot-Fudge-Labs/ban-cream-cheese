@@ -8,6 +8,13 @@ export interface StatCardProps {
   className?: string;
 }
 
+// Move variant styles outside component to prevent recreation
+const VARIANT_STYLES = {
+  dark: 'bg-black text-white border-white',
+  light: 'bg-white text-black border-black',
+  red: 'bg-red-500 text-white border-white',
+} as const;
+
 /**
  * Reusable stat card component with neo-brutalist styling.
  * Used throughout the site to display statistics and metrics.
@@ -19,17 +26,12 @@ export function StatCard({
   variant = 'dark',
   className 
 }: StatCardProps) {
-  const variantStyles = {
-    dark: 'bg-black text-white border-white',
-    light: 'bg-white text-black border-black',
-    red: 'bg-red-500 text-white border-white',
-  };
 
   return (
     <div 
       className={cn(
         'p-8 border-4 text-center transform',
-        variantStyles[variant],
+        VARIANT_STYLES[variant],
         rotation,
         className
       )}

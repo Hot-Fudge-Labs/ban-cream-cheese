@@ -49,7 +49,7 @@ export function ImageWithFallback({
     );
   }
 
-  // For external URLs, use regular img tag to support fallback behavior
+  // For external URLs, use regular img tag with loading optimization
   if (src.startsWith('http')) {
     return (
       /* eslint-disable-next-line @next/next/no-img-element */
@@ -58,6 +58,8 @@ export function ImageWithFallback({
         alt={alt}
         className={className}
         onError={handleError}
+        loading="lazy" // Native lazy loading
+        decoding="async" // Async image decoding
         {...(props as React.ImgHTMLAttributes<HTMLImageElement>)}
       />
     );

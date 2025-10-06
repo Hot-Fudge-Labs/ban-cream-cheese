@@ -1,5 +1,10 @@
 import { StatCard, RotatedCard, CTAButton } from '@/app/components/ui';
 
+// Memoize background grid to prevent re-creation on every render
+const BACKGROUND_GRID = Array.from({ length: 64 }, (_, i) => (
+  <div key={i} className="border border-white/20"></div>
+));
+
 /**
  * Hero section component with dramatic headline, stats grid, and call-to-action.
  * Features a neo-brutalist design with bold typography and rotated elements.
@@ -10,9 +15,7 @@ export function HeroSection() {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div className="grid grid-cols-8 h-full">
-          {Array.from({ length: 64 }).map((_, i) => (
-            <div key={i} className="border border-white/20"></div>
-          ))}
+          {BACKGROUND_GRID}
         </div>
       </div>
       
