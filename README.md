@@ -3,9 +3,19 @@
 A bold, neo-brutalist website exposing the systematic destruction of Japanese culinary artistry through the cream cheese conspiracy.
 
 <div align="center">
+
+**🔗 [View Live Site](https://www.creamcheesemustdie.com/)** | [View Code](#-project-structure)
+
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.creamcheesemustdie.com&style=for-the-badge&logo=vercel&label=LIVE%20DEMO)](https://www.creamcheesemustdie.com/)
+
+</div>
+
+---
+
+<div align="center">
   
 ![Demo](./public/screenshots/image.gif)
-
+  
 </div>
 
 ---
@@ -91,6 +101,14 @@ ban-cream-cheese/
 ├── eslint.config.mjs        # ESLint configuration
 └── package.json             # Dependencies and scripts
 ```
+
+## 🌐 Live Demo
+
+**Visit the live site:** **[www.creamcheesemustdie.com](https://www.creamcheesemustdie.com/)**
+
+Experience the full neo-brutalist design, smooth scrolling, and responsive layout in action!
+
+---
 
 ## 🚀 Getting Started
 
