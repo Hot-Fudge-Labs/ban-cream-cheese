@@ -242,7 +242,24 @@ Follows Tailwind's default spacing scale (0.25rem increments).
 
 ## 📄 License
 
-Private project - All rights reserved.
+**All Rights Reserved** - Source Available for Portfolio/Reference Only
+
+This code is available for viewing and learning purposes (portfolio review, code assessment, educational reference). 
+
+**You may NOT:**
+- ❌ Use this code in your own projects
+- ❌ Copy or fork for commercial use
+- ❌ Reuse the concept or design
+- ❌ Distribute modified versions
+
+**You may:**
+- ✅ View the code for learning
+- ✅ Reference it in technical discussions
+- ✅ Review it for hiring/assessment purposes
+
+For licensing inquiries, contact: brannan.marc@gmail.com
+
+See [LICENSE](./LICENSE) for full terms.
 
 ## ⚠️ Disclaimer
 
