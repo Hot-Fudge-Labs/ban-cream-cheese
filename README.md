@@ -46,9 +46,11 @@ ban-cream-cheese/
 │   │       ├── section-container.tsx
 │   │       ├── image-with-fallback.tsx
 │   │       └── index.ts     # Barrel exports
-│   ├── lib/                 # Utility functions
+│   ├── lib/                 # Utility functions and constants
 │   │   ├── __tests__/       # Unit tests
-│   │   └── utils.ts         # Helper functions (cn, smoothScrollTo)
+│   │   ├── constants.ts     # App-wide constants (URLs, IDs)
+│   │   ├── utils.ts         # Helper functions (cn, smoothScrollTo)
+│   │   └── index.ts         # Barrel exports
 │   ├── globals.css          # Global styles and Tailwind config
 │   ├── layout.tsx           # Root layout with metadata
 │   └── page.tsx             # Main landing page

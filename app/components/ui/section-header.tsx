@@ -1,7 +1,9 @@
+import { ReactNode } from 'react';
+import { cn } from '@/app/lib/utils';
 import { RotatedCard } from './rotated-card';
 
 export interface SectionHeaderProps {
-  title: string | React.ReactNode;
+  title: string | ReactNode;
   subtitle?: string;
   subtitleRotation?: string;
   className?: string;
@@ -18,7 +20,7 @@ export function SectionHeader({
   className 
 }: SectionHeaderProps) {
   return (
-    <div className={`text-center mb-16 ${className || ''}`}>
+    <div className={cn('text-center mb-16', className)}>
       <h2 className="text-5xl md:text-7xl font-black uppercase mb-8">
         {title}
       </h2>

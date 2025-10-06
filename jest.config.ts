@@ -22,6 +22,7 @@ const config: Config = {
     'app/**/*.{js,jsx,ts,tsx}',
     '!app/**/*.d.ts',
     '!app/**/index.ts',
+    '!app/**/types.ts',
     '!app/layout.tsx',
     '!app/page.tsx',
   ],

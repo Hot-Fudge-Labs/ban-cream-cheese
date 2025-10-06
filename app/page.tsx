@@ -3,6 +3,7 @@ import { HeroSection } from "./components/sections/hero-section";
 import { EvidenceSection } from "./components/sections/evidence-section";
 import { ChefTestimony } from "./components/sections/chef-testimony";
 import { FooterSection } from "./components/sections/footer-section";
+import { SECTION_IDS } from "./lib/constants";
 
 /**
  * Main page component for the Sushi Truth website.
@@ -16,17 +17,17 @@ export default function Home() {
       <main>
         <HeroSection />
         
-        <div id="evidence">
+        <section id={SECTION_IDS.EVIDENCE}>
           <EvidenceSection />
-        </div>
+        </section>
         
-        <div id="testimony">
+        <section id={SECTION_IDS.TESTIMONY}>
           <ChefTestimony />
-        </div>
+        </section>
         
-        <div id="action">
+        <section id={SECTION_IDS.ACTION}>
           <FooterSection />
-        </div>
+        </section>
       </main>
     </div>
   );

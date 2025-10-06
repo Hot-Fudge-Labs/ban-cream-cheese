@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image, { ImageProps } from 'next/image';
 
 const ERROR_IMG_SRC =
@@ -22,6 +22,11 @@ export function ImageWithFallback({
   ...props
 }: ImageWithFallbackProps) {
   const [didError, setDidError] = useState(false);
+
+  // Reset error state when src changes
+  useEffect(() => {
+    setDidError(false);
+  }, [src]);
 
   const handleError = () => {
     setDidError(true);

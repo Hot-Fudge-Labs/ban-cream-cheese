@@ -1,6 +1,5 @@
 import { ImageWithFallback, SectionHeader, SectionContainer, StatCard, RotatedCard, CTAButton } from '@/app/components/ui';
-
-const chefUrl = "https://images.unsplash.com/photo-1548285181-3103ce5d3db2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXNoaSUyMGNoZWYlMjB0cmFkaXRpb25hbHxlbnwxfHx8fDE3NTg1ODI0MTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+import { IMAGE_URLS } from '@/app/lib/constants';
 
 /**
  * Chef testimony section featuring a quote from an anonymous sushi master,
@@ -40,7 +39,7 @@ export function ChefTestimony() {
 
         <div className="order-1 lg:order-2">
           <ImageWithFallback 
-            src={chefUrl}
+            src={IMAGE_URLS.CHEF_PORTRAIT}
             alt="Traditional sushi chef"
             className="w-full h-96 object-cover border-8 border-white shadow-[16px_16px_0px_0px_#000000]"
             width={1080}

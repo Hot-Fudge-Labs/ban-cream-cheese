@@ -12,9 +12,15 @@ describe('Navigation', () => {
   });
 
   it('should render the navigation bar', () => {
-    render(<Navigation />);
+    const { container } = render(<Navigation />);
     
-    expect(screen.getByRole('navigation')).toBeInTheDocument();
+    // Check for the outer nav element
+    const outerNav = container.querySelector('nav.fixed');
+    expect(outerNav).toBeInTheDocument();
+    
+    // Check for the inner semantic nav
+    const innerNav = screen.getByRole('navigation', { name: 'Main navigation' });
+    expect(innerNav).toBeInTheDocument();
   });
 
   it('should render the logo/brand name', () => {
@@ -51,7 +57,7 @@ describe('Navigation', () => {
     const evidenceButton = screen.getByRole('button', { name: /Navigate to evidence section/i });
     fireEvent.click(evidenceButton);
     
-    expect(scrollIntoViewMock).toHaveBeenCalledWith({ behavior: 'smooth' });
+    expect(scrollIntoViewMock).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' });
   });
 
   it('should scroll to testimony section when testimony link is clicked', () => {
@@ -66,7 +72,7 @@ describe('Navigation', () => {
     const testimonyButton = screen.getByRole('button', { name: /Navigate to testimony section/i });
     fireEvent.click(testimonyButton);
     
-    expect(scrollIntoViewMock).toHaveBeenCalledWith({ behavior: 'smooth' });
+    expect(scrollIntoViewMock).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' });
   });
 
   it('should scroll to action section when action link is clicked', () => {
@@ -81,7 +87,7 @@ describe('Navigation', () => {
     const actionButton = screen.getByRole('button', { name: /Navigate to take action section/i });
     fireEvent.click(actionButton);
     
-    expect(scrollIntoViewMock).toHaveBeenCalledWith({ behavior: 'smooth' });
+    expect(scrollIntoViewMock).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' });
   });
 
   it('should have fixed positioning with proper styling', () => {
@@ -95,9 +101,10 @@ describe('Navigation', () => {
   it('should hide navigation links on mobile (md:flex)', () => {
     const { container } = render(<Navigation />);
     
-    const navLinks = container.querySelector('.md\\:flex.space-x-8');
+    // Updated to match new semantic nav structure
+    const navLinks = container.querySelector('nav[aria-label="Main navigation"]');
     expect(navLinks).toBeInTheDocument();
-    expect(navLinks).toHaveClass('hidden');
+    expect(navLinks).toHaveClass('hidden', 'md:flex');
   });
 
   it('should handle missing section gracefully', () => {
