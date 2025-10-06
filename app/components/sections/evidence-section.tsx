@@ -1,7 +1,7 @@
 import { ImageWithFallback, SectionHeader, SectionContainer } from '@/app/components/ui';
 
-const traditionUrl = "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=1080&q=80"; // Traditional nigiri sushi
-const creamCheeseUrl = "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=1080&q=80"; // Philadelphia roll with cream cheese and salmon
+const traditionUrl = "https://images.unsplash.com/photo-1581781870027-04212e231e96?q=80&w=1080"; // Traditional nigiri sushi
+const creamCheeseUrl = "https://images.unsplash.com/photo-1759646828324-c215a83828ae?q=80&w=1080"; // Philadelphia roll with cream cheese and salmon
 
 interface ComparisonItemProps {
   icon: React.ReactNode;
@@ -42,7 +42,7 @@ export function EvidenceSection() {
                 <ImageWithFallback 
                   src={traditionUrl}
                   alt="Traditional sushi nigiri"
-                  className="w-full h-64 object-cover border-4 border-black"
+                  className="w-full h-64 object-cover object-[center_75%] border-4 border-black"
                   width={1080}
                   height={720}
                 />
@@ -78,7 +78,7 @@ export function EvidenceSection() {
                 <ImageWithFallback 
                   src={creamCheeseUrl}
                   alt="Cream cheese sushi roll"
-                  className="w-full h-64 object-cover border-4 border-black"
+                  className="w-full h-64 object-cover object-[center_55%] border-4 border-black"
                   width={1080}
                   height={720}
                 />
