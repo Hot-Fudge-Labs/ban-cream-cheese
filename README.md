@@ -6,31 +6,26 @@ A bold, neo-brutalist website exposing the systematic destruction of Japanese cu
   
 ![Demo](./public/screenshots/image.gif)
 
-*Neo-brutalist design with bold typography, high contrast, and dramatic messaging*
-
 </div>
 
 ---
 
-## 📸 Screenshots
+## 📸 Mobile Screenshots
 
 <div align="center">
 
-### Hero Section
-![Hero](./public/screenshots/32_1x_shots_so.png)
-
-### Evidence Comparison
-![Evidence](./public/screenshots/415_1x_shots_so.png)
-
-### Chef Testimony
-![Testimony](./public/screenshots/637_1x_shots_so.png)
-
-### Mobile Views
 <p>
-<img src="./public/screenshots/215_1x_shots_so.png" width="250" alt="Mobile Hero">
-<img src="./public/screenshots/251_1x_shots_so.png" width="250" alt="Mobile Evidence">
-<img src="./public/screenshots/403_1x_shots_so.png" width="250" alt="Mobile Testimony">
+<img src="./public/screenshots/32_1x_shots_so.png" width="250" alt="Mobile Hero">
+<img src="./public/screenshots/215_1x_shots_so.png" width="250" alt="Mobile Evidence">
+<img src="./public/screenshots/251_1x_shots_so.png" width="250" alt="Mobile Testimony">
 </p>
+
+<p>
+<img src="./public/screenshots/415_1x_shots_so.png" width="250" alt="Mobile Footer">
+<img src="./public/screenshots/637_1x_shots_so.png" width="250" alt="Mobile Stats">
+</p>
+
+*Fully responsive design across all mobile devices*
 
 </div>
 
